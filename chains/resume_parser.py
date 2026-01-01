@@ -4,10 +4,16 @@ from langchain_core.output_parsers import PydanticOutputParser
 from dotenv import load_dotenv
 from schemas.resume_schema import ResumeData
 
+import streamlit as st
+
 load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY")
+
 
 llm = ChatOpenAI(
     model="mistralai/devstral-2512:free",
+    api_key=OPENAI_API_KEY,
     temperature=0
 )
 
