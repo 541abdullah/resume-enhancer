@@ -41,7 +41,7 @@ if resume_file:
         enhanced_resume = generate_enhanced_resume(resume_text, jd_text)
         enhanced_resume = extract_between_markers(enhanced_resume)
         save_enhanced_resume(enhanced_resume)
-        convert("enhanced_resume.docx", "enhanced_resume.pdf")
+        #convert("enhanced_resume.docx", "enhanced_resume.pdf")
         #docx_to_pdf("enhanced_resume.docx")
 
         
