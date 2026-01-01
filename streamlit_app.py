@@ -53,7 +53,7 @@ if resume_file:
         
         with open("enhanced_resume.docx", "rb") as f:
             st.download_button("Download Resume (DOCX)", f, file_name="enhanced_resume.docx")
-        with open("enhanced_resume.pdf", "rb") as f:
-            st.download_button("Download Resume (PDF)", f, file_name="enhanced_resume.pdf")
+        # with open("enhanced_resume.pdf", "rb") as f:
+        #     st.download_button("Download Resume (PDF)", f, file_name="enhanced_resume.pdf")
         with open("cover_letter.docx", "rb") as f:
             st.download_button("Download Cover Letter (DOCX)", f, file_name="cover_letter.docx")
