@@ -6,8 +6,8 @@ from utils.doc_writer import save_cover_letter
 from chains.resume_parser import parse_resume
 from chains.jd_parser import parse_jd
 from chains.matcher import match_resume_to_jd
-from docx2pdf import convert
-#from utils.pdf_converter import docx_to_pdf
+#from docx2pdf import convert
+from utils.pdf_converter import docx_to_pdf
 
 st.title("Resume Enhancer 🚀")
 
@@ -41,8 +41,8 @@ if resume_file:
         enhanced_resume = generate_enhanced_resume(resume_text, jd_text)
         enhanced_resume = extract_between_markers(enhanced_resume)
         save_enhanced_resume(enhanced_resume)
-        convert("enhanced_resume.docx", "enhanced_resume.pdf")
-        #docx_to_pdf("enhanced_resume.docx")
+        #convert("enhanced_resume.docx", "enhanced_resume.pdf")
+        docx_to_pdf("enhanced_resume.docx")
 
         
         cover_letter = generate_cover_letter(resume_text, jd_text)
