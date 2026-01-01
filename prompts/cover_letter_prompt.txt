@@ -1,0 +1,14 @@
+
+Write a professional cover letter.
+
+Rules:
+- Plain text only
+- No markdown
+- No asterisks
+- No special formatting
+
+Resume:
+{resume_text}
+
+Job Description:
+{jd_text}

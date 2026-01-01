@@ -1,0 +1,9 @@
+Extract information from the resume text below.
+
+Return:
+- skills (list)
+- years_experience (number)
+- roles (list)
+
+Resume:
+{resume_text}

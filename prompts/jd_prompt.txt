@@ -1,0 +1,10 @@
+Extract information from the job description below.
+
+Return:
+- required_skills (list)
+- preferred_skills (list)
+- min_experience (number)
+- role_title (string)
+
+Job Description:
+{jd_text}

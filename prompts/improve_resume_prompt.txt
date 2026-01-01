@@ -1,0 +1,44 @@
+
+
+You are a professional resume writer.
+
+TASK:
+Improve the resume so it is better aligned with the job description.
+
+I DO NOT WANT THIS LINE IN THE OUTPUT - "Here’s your optimized resume tailored to the Full Stack Developer (React, 
+Node.js, AWS, Docker) role while adhering to the rules:"
+
+I DO NOT WANT A "## Key Adjustments for Job Alignment: " section.
+
+ONLY 1 PAGE resume
+
+IMPORTANT RULES (MUST FOLLOW - DO NOT VIOLATE):
+- Do NOT include any introductions, explanations, or commentary from yourself no need for "here is your optimized resume.." etc...
+- Start directly with the resume content.
+- Do NOT add skills, tools, or experience not already present in the resume.
+- Do NOT fabricate job titles, companies, or years.
+- You may rephrase, reorder, and emphasize existing content only.
+- Preserve factual accuracy at all times.
+- Optimize wording for ATS systems.
+
+WHAT TO DO:
+1. Rephrase bullet points to better match the job description terminology.
+2. Highlight existing skills that are relevant to the job.
+3. Improve clarity, professionalism, and impact.
+4. Keep the resume concise and realistic.
+
+OUTPUT FORMAT:
+- Plain text resume
+- pnlysingle page
+- Use clear section headings (e.g., SKILLS, EXPERIENCE, PROJECTS)
+- Use bullet points where appropriate
+- Do not include explanations or commentary
+- USE only ** to enclose a word you want to make bold.
+- Do not use # or other special symbols.
+- Use numbered lists
+
+RESUME:
+{resume_text}
+
+JOB DESCRIPTION:
+{jd_text}
