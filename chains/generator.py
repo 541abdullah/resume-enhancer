@@ -16,10 +16,7 @@ llm = ChatOpenAI(
 
 
 def generate_resume_advice(resume_text: str, jd_text: str) -> str:
-    """
-    Generates actionable improvement suggestions for the resume,
-    WITHOUT rewriting it. Uses the new resume_suggestions_prompt.txt.
-    """
+    
     prompt = PromptTemplate(
         template=open("prompts/resume_suggestions_prompt.txt").read(),
         input_variables=["resume_text", "jd_text"]
@@ -46,14 +43,7 @@ def generate_cover_letter(resume_text: str, jd_text: str) -> str:
 
 
 def generate_enhanced_resume(resume_text: str, jd_text: str) -> str:
-    """
-    Rewrites the resume to better match the job description.
-    Constraints:
-    - Only rephrase existing information
-    - Do NOT add new jobs, companies, or years
-    - Emphasize skills relevant to the JD
-    - Output plain text
-    """
+    
     prompt_template = """
 You are a resume optimization assistant.
 
